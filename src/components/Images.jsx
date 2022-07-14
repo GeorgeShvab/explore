@@ -6,7 +6,7 @@ import Card from './Card'
 class Images extends React.Component {
     componentDidMount() {
         ;(async () => {
-            await fetch('http://192.168.0.97:3000/data.json')
+            await fetch('https://192.168.0.97:3000/data.json')
                 .then((res) => res.json())
                 .then((res) => {
                     this.setState({ data: res })
